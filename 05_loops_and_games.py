@@ -125,7 +125,55 @@ for number in numbers:
       max=number
       print(max)
 
+# 8.2D Lists
+#-------------------------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------------------------
+matrix=[
+   [1,2,3],
+   [4,5,6],
+   [7,8,9]
+]
+matrix[0] [1]=20
+print(matrix[0][1])
+matrix=[
+   [3,4,5],
+   [1,4,7],
+   [1,5,2]
+]
+for row in matrix:
+   for item in row:
+      print(item)
 
+# 9.List Methods
+#-----------------------------------------------------------------------------------------------
+#-----------------------------------------------------------------------------------------------
+numbers=[2,4,1,7,8,5]
+numbers.append(11)
+print(numbers)
+numbers=[2,4,5,7,23]
+numbers.insert(0,10)
+print(numbers)
+numbers=[1,2,3,4,2]
+print(numbers.index(4))
+print(50 in numbers)
+print(numbers.count(2))
+print(numbers.sort())
+numbers=[2,3,1,5,7,9,3]
+numbers.sort()
+numbers.reverse()
+print(numbers)
+numbers=[1,2,3,6,4,6]
+numbers2=numbers.copy()
+numbers.append(10)
+print(numbers2)
+#Exercise:Write a program to remove the duplicates in a list
+numbers=[2,3,2,4,5,4,6,7,8,,6]
+uniques=[]
+for number in numbers:
+   if number not in uniques:
+      uniques.append(number)
+      print(uniques)
+      
 
 
 
