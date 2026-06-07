@@ -94,8 +94,72 @@ def greet_user(first_name,last_name):
 
 
 print("Start")
-greet_user('Iqra', first_name='Yasmin')
+greet_user('Iqra', 'Yasmin')
 print("Finish")
+#use keyword arguments after positional arguments
+
+# 8.Return Statement
+#------------------------------------------------------------------------------------
+#------------------------------------------------------------------------------------
+def square (number):
+   return number * number
+
+
+result=square(3)
+print(result)
+
+def square(number):
+   return number * number
+
+
+print(square(3))
+
+def square(number):
+   print(number * number)
+
+
+print(square(3))
+
+# 9.Creating a Reusable Function
+#------------------------------------------------------------------------
+#------------------------------------------------------------------------
+def emoji_converter(message):
+
+   words=message.split(' ')
+   emojis={
+   ":)":"😊",
+   ":(":"🥹"
+   }
+   output=""
+   for word in words:
+      output += emojis.get(word,word)  + " "
+   return output
+
+message=input(">")
+print(emoji_converter(message))
+
+# 10.Exceptions
+#----------------------------------------------------------------------------------
+#----------------------------------------------------------------------------------
+try:
+  age=int(input('Age: '))
+  income=200000
+  risk=income/age
+  print(age)
+except ZeroDivisionError:
+   print('Age cannot be 0.')
+except ValueError:
+   print('Invalid value')
+ 
+ # 11. Comments
+ #----------------------------------------------------------------------------------
+ #----------------------------------------------------------------------------------
+ 
+
+
+
+
+
 
 
   
