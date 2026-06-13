@@ -67,7 +67,7 @@ class Dog(Mammal):
 
 class Cat(Mammal):
     def be_annoying(self):
-        print("annoying")00.000
+        print("annoying")
 
 dog1=Dog()
 dog1.walk()
@@ -84,3 +84,55 @@ print(max)
 #5.Packages
 #----------------------------------------------------------------------------------------------
 #----------------------------------------------------------------------------------------------
+#6.Generating random values
+
+import random
+
+for i in range(3):
+    print(random.random())
+    print(random.randint(10,20))
+
+import random
+
+members=['jon','mary','bob','mosh']
+leader=random.choice(members)
+print(leader)
+ #Exercise: Roll Dice
+
+import random
+
+class Dice:
+    def roll(self):
+        first=random.randint(1,6)
+        second=random.randint(1,6)
+        return first,second
+    
+
+dice=Dice()
+print(dice.roll())
+
+#7.Files and Directions
+#------------------------------------------------------------------------
+#------------------------------------------------------------------------
+#Absolute path
+#c:\Program Files\Microsoft
+#/usr/local/bin
+#Relative path
+from pathlib import Path
+
+path=Path()
+print(path.glob('*.py'))
+
+from pathlib import Path
+
+path=Path()
+for file in path.glob('*.py'):
+    print(file)
+
+#8.Pypi and Pip
+#-----------------------------------------------------------------------
+#-----------------------------------------------------------------------
+
+
+
+
